@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+#searchbar{
+    width: 300px;
+    height: 55px;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
+}
+
+#searchbox{
+    background-color: transparent;
+}
+
+#addPhoto{
+    background: #3DB46D;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    width: 137px;
+    height:55px;
+}
+
+.form-input{
+    width: 100%;
+    max-width: 552.33px;
+    font-size: 14px;
+    padding: 18px;
+}
+
+.dialog-panel{
+    max-width: 620px;
+}
+
+.photo-container:hover > .Photo{
+    filter:brightness(50%);
+}
+
+.photo-label{
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+
+.photo-container:hover > .photo-label{
+    opacity: 1;
+}
+
+.delete-photo{
+    width: 63px;
+    height: 23px;
+    font-size: 10px;
+    border-radius: 38px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.photo-container:hover > .delete-photo{
+    opacity: 1;
+    transition: opacity .6s ease-in-out;
+}
